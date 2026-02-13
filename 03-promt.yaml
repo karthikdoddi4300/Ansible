@@ -1,5 +1,5 @@
 - name: vars_prompt example 
-  hosts: localhosts
+  hosts: localhost
   connection: local 
   vars_prompt:
   - name: username
