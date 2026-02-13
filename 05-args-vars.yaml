@@ -1,0 +1,7 @@
+- name : arguments varibles
+  hosts: localhost
+  connection : localhost
+  tasks:
+  - name : passing varibales as arguments
+    ansible.builtin.debug:
+      msg: "name is {{NAME}}"
