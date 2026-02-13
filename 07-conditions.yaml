@@ -1,0 +1,10 @@
+- name : conditions in ansible
+  hosts: localhost
+  connection: local
+  vars:
+    is_live: true
+  tasks:
+  - name : conditions
+    ansible.builtin.debug:
+      msg : " ys ,it is alive "
+    when: is_live
