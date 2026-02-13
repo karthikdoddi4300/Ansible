@@ -1,5 +1,5 @@
 - name: play level varible
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     COURSE: "DEVOSP WITH AWS"
