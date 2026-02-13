@@ -1,0 +1,10 @@
+- name : checkin the greater number
+  hosts: localhost
+  connection: local
+  vars:
+    number : 7 
+  tasks:
+  - name: eeeeeeeee
+    ansible.builtin.debug:
+      msg: " no of sessions are greaterthen 5"
+    when : number > 5
