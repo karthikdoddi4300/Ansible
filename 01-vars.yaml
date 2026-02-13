@@ -7,5 +7,5 @@
     MENTOR : "  SHIVA KUMAR REDY"
   tasks:
   - name: print variable
-    ansible.buitlin.debug:
+    ansible.builtin.debug:
       msg: " course is {{COURSE:}} , duration is {{DURATION:}} ,, mentoer is {{MENTOR}}"
