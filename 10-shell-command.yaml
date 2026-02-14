@@ -6,9 +6,16 @@
   - name: command module
     #ansible.builtin.command: cat /etc/passwd | grep root
     ansible.builtin.shell: cat /etc/passwd | grep root
-    register: root_output
+    register: root_output # this register ckeyword used to  capture the output of the shell cmd and storese in variable
 
   - name : printing root_output
     ansible.builtin.debug:
       msg: "{{root_output}}"
+  
+  - name : testing 
+    ansible.builtin.shell: ls -ltrh > file.txt
+    register: ouput1
+
+
+
   
