@@ -4,7 +4,8 @@
 
   tasks:
   - name: command module
-    ansible.builtin.command: cat /etc/passwd | grep root
+    #ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
     regester: root_output
 
   - name : printing root_output
