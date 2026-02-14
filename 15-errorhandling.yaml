@@ -5,7 +5,7 @@
   - name: check user exits or not 
     ansible.builtin.command: id catalogue
     register: user_output
-
+    ignore_errors: true
   - name : printing the user_output
     ansible.builtin.debug:
       msg: "{{user_output}}" 
